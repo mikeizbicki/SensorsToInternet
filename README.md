@@ -5,7 +5,7 @@ This hardware hack attempts to provide the user with a simple means of communica
 
 Welcome to the Inernet of Things!
 
-![webpage.png](/images/webpage.png?raw=true "webpage.png")
+
 
 #Components and where do we get them
 Electric Imp Module
@@ -67,3 +67,5 @@ The ```device.on``` function is a function that passes in a string, and dependin
 #Resources
 Sparkfun is an excellent resource for purchasing parts. Their data streaming service is also worth taking a look at.
 
+
+![webpage.png](/images/webpage.png?raw=true "webpage.png")
