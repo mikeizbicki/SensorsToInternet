@@ -18,7 +18,7 @@ For some circuit enthusiasts, many of the materials may be lying around the hous
 #Procedure and Assembly
 
 
-#Coding and squirrel
+#Coding and Squirrel
 Electric Imp has its own online IDE that allows you to edit both the code for the agent and the device. This gives you complete control over how data is managed as its getting sent through the Electric Imp module. 
 
 https://ide.electricimp.com/ide
