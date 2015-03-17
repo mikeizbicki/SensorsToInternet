@@ -1,21 +1,11 @@
 # SensorsToInternet
 A UCR Computer Science 100 project by Michael Uy, Leo Li, Will Lee, Chuanping “Ping” Fan
 
-
 Welcome to the Inernet of Things!
 
+This hardware hack attempts to provide the user with a simple means of communicating data from an analog sensor to be sent, stored, and tracked on the internet. This opens up the opportunity to automate our world. For this proect specifically, we used an Electric Imp to get readings from a thermistor and a photosensor and upload that information to the internet. Our project goal is to present this data in an organized way so that future readers can recreate this project for themselves and explore the applications.
 
-This hardware hack attempts to provide the user with a simple means of communicating data from an analog sensor to be sent, stored, and tracked on the internet. This opens up the opportunity to automate your world.
-
-This tutorial  
-We’ll be using the Electric Imp module as our means to connect to the internet. 
-
-
-(idk if we are keeping this)//This project features a EC sensor based on the octiva.net's EC/TDS/PPM Meter. 
-
-# Components and where do we get them
-//12V PSU
-
+#Components and where do we get them
 Electric Imp Module
 Photosensor (5V photocell)
 100K OHM NTC THERMISTOR 5MM
