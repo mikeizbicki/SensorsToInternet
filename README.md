@@ -5,7 +5,7 @@ This hardware hack attempts to provide the user with a simple means of communica
 
 Welcome to the Inernet of Things!
 
-![webpage.png](SensorsToInternet/images/webpage.png?raw=true "webpage.png")
+![webpage.png](/images/webpage.png?raw=true "webpage.png")
 
 #Components and where do we get them
 Electric Imp Module
