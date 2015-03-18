@@ -71,12 +71,13 @@ The ```getsensortemp()``` function takes in analog temperature input and then co
 The ```gettime()``` function gets the current month, date, and time of when the actual analog input is received fromt the sensor connected to the electric imp. 
 
 The ```sendDataToAgent()``` function sends the data we have received from the sensors on our electric imp to the agent section of the IDE, where then the agent will continue on to upload all the data we have received. 
-Specifics to Agent: 
+Specifics to Agent:
 
 The ```device.on``` function is a function that passes in a string, and depending on the string, it will upload the information associated with that string onto the internet. Within this function, the ```data``` struct contains the data that you want to upload and the timestamp of the current time when the actual data was loaded. The ```layout``` struct contains the data for what the graph will be called. If the filename is changed, then a new url will be outputted for the output of our data. Next, there is the ```payload``` struct, which sets up the data to be posted online. Afterwards in this struct, the heaaders, url, and body are declared.Finally, the ```httppostwrapper``` function is called, which will request the http website and actualy post the information online for others to see.  
 
 #Errors and Issues
 
+The electric imp is going to take some time and patience to configure correctly to your phone. That is because the electric imp needs to read a light pattern emitted from your smart phone. If there are external light and/or other distractions in the room that might obstruct the reading pattern of the electric imp, the imp not configure. We have encountered this error many times in our numerous attempts to configure the imp. The best solution for this issue is to configure your imp in a dark area where no other light except the light on you smart phone can be seen by your electric imp. 
 
 #Applications and Extensions 
 - Track when your dog uses the doggy door/ are they inside or outside
