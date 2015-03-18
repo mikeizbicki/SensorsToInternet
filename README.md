@@ -62,11 +62,14 @@ https://electricimp.com/docs/squirrel/squirrelcrib/
 You will need to decide on a data service that will store this information for you. Sparkfun has their own data service which is pretty easy to setup and can even print out graphs for you without any extra configuration. We used plot.ly as our data service simply because we wanted to be able to do more with the data we collected, such as embedding it on our own website.
 
 https://data.sparkfun.com/ & http://imp.guru/
+
+Below is our data and graphs from data.sparkfun and imp.guru
 ![data_sparkfun.png](/images/data_sparkfun.png?raw=true "data_sparkfun.png")
 ![imp_guru](/images/imp_guru.png?raw=true "imp_guru.png")
 
 https://plot.ly/workshop/
 
+Below is our graphs of light and temperature on plot.ly
 ![LightGraph](/images/LightGraph.png?raw=true "LightGraph.png") ![TempGraph](/images/TempGraph.png?raw=true "TempGraph.png")
 
 
