@@ -64,6 +64,8 @@ You will need to decide on a data service that will store this information for y
 https://data.sparkfun.com/ & http://imp.guru/ 
 https://plot.ly/workshop/
 
+![LightGraph](/images/LightGraph.png?raw=true "LightGraph.png") ![TempGraph](/images/TempGraph.png?raw=true "TempGraph.png")
+
 
 Once you use the mobile phone Electric Imp app to connect your module to the internet, you can then go onto the Electric Imp IDE 
 
