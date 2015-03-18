@@ -9,11 +9,17 @@ Welcome to the Inernet of Things!
 
 #Components and where do we get them
 Electric Imp Module
+
 Photosensor (5V photocell)
+
 100K OHM NTC THERMISTOR 5MM
+
 iOS 5.1.1 or later device or Android 2.1 or up
+
 Electric Imp API
+
 Breadboard or circuit board
+
 Some resistors(resistance can vary, we used 330 ohm resistors) 
 
 For some circuit enthusiasts, many of the materials may be lying around the house. If not, none of these materials are hard to acquire. Sparkfun and Tayda Electronics are excellent resources for ordering the parts online. 
