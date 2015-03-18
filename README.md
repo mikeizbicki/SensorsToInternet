@@ -27,7 +27,6 @@ For some circuit enthusiasts, many of the materials may be lying around the hous
 
 Assembly: 
 
-![device](/images/device.JPG?raw=true "device.JPG")
 
 There are many different ways for users to assemble sensors in order to upload data onto the internet through using an electric imp. The electric imp consists of a micro-controller with pins as output and input, allowing the user to connect various sensors to it. In our specific case, we used a photoresistor as a sensor for light input, and a thermistor as a sensor for temperature input. 
 
@@ -37,18 +36,20 @@ The thermistor, on the other hand, is a little more complicated. A thermistor is
 
 Procedure: 
 
-The following procedures only highlight the steps that we have taken in order to assemble our specific sensors. There are many ways one can do this, the way we assembled our units is only one of the many ways one can assemble together working sensors.
+![device](/images/device.JPG?raw=true "device.JPG")
+
+The following procedures only highlight the steps that we have taken in order to assemble our specific sensors. There are many ways one can do this. The way we assembled our units is only one of the many ways one can assemble together working sensors.
 
 First, connect the GND pin of the electrip imp to ground on your given breadboard or circuit board. Connect the 3V3 pin to the power of your breadboard or cicuit board. Also, connect the usb to a working power source(laptop, battery, etc) and connect the other end to your electric imp. 
 
 Photoresistor:
-Select a pin of your choice, in our case we have selected pin 8. Connect a resistor of your choice, we used a 330K ohm resistor, and connect that to one end of the photoresistor. Connect the other end of the photoresistor to ground on your board. Depending on the pin you have selected to use, you must write your code accordingly to use this pin or else it will not work. 
+Select a pin of your choice; in our case we have selected pin 8. Connect a resistor of your choice, we used a 330K ohm resistor, and connect that to one end of the photoresistor. Connect the other end of the photoresistor to ground on your board. Depending on the pin you have selected to use, you must write your code accordingly to use this pin or else it will not work. 
 
 Thermistor: 
 Select 2 pins on the electric imp, we used pin7 and pin9 for our specific case. Connect a resistor of your choice, we used a 330k ohm resistor, and connect that to one of the pins. Then, connect one end of the thermistor to the resistor, while you connect the other end to the second pin you have selected. There is no need to ground the thermistor as mentioned above because you want to use one of the pins to control when to take input from the thermistor. Depending on the pins you have selected, you must write your code accordingly to these pins or the thermistor will not function correctly. 
 
 #Coding and Squirrel
-Electric Imp has its own online IDE that allows you to edit code in order to control the behavior of hardware( referred to as the device code) and how it connects to the internet and sends/receives data(referred to as the agent code). This gives you complete control over how data is managed as it is sent through the Electric Imp module. 
+Electric Imp has its own online IDE(workspace) that allows you to edit code in order to control the behavior of hardware(referred to as the device code) and how it connects to the internet and sends/receives data(referred to as the agent code). This gives you complete control over how data is managed as it is sent through the Electric Imp module. 
 
 https://ide.electricimp.com/ide
 Squirrel is the language used to program the imp. Squirrel is very similar to
