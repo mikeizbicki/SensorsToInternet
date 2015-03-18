@@ -14,7 +14,7 @@ Photosensor (5V photocell)
 iOS 5.1.1 or later device or Android 2.1 or up
 Electric Imp API
 Breadboard or circuit board
-Some resistors(resistance can vary) 
+Some resistors(resistance can vary, we used 330 ohm resistors) 
 
 For some circuit enthusiasts, many of the materials may be lying around the house. If not, none of these materials are hard to acquire. Sparkfun and Tayda Electronics are excellent resources for ordering the parts online. 
  
@@ -71,9 +71,14 @@ The ```getsensortemp()``` function takes in analog temperature input as Kelvins 
 The ```gettime()``` function gets the current month, date, and time of when the actual analog input is received fromt the sensor connected to the electric imp. 
 
 The ```sendDataToAgent()``` function sends the data we have received from the sensors on our electric imp to the agent section of the IDE, where then the agent will continue on to upload all the data we have received. In our code, wee assigned pin9 as ANALOG_IN to read the temp, but we also set pin7 as DIGITAL_OUT. By setting pin7 to high, we are able to deactivate the thermistor and save electricity. In order for us to take readings, we simply write pin7 to 0  and call our read function, writing 1 to pin7 afterwards.
+
 Specifics to Agent:
 
-The ```device.on``` function is a function that passes in a string, and depending on the string, it will upload the information associated with that string onto the internet. Within this function, the ```data``` struct contains the data that you want to upload and the timestamp of the current time when the actual data was loaded. The ```layout``` struct contains the data for what the graph will be called. If the filename is changed, then a new url will be outputted for the output of our data. Next, there is the ```payload``` struct, which sets up the data to be posted online. Afterwards in this struct, the heaaders, url, and body are declared.Finally, the ```httppostwrapper``` function is called, which will request the http website and actualy post the information online for others to see.  
+The ```device.on``` function is a function that passes in a string, and depending on the string, it will upload the information associated with that string onto the internet. Within this function, the ```data``` struct contains the data that you want to upload and the timestamp of the current time when the actual data was loaded. The ```layout``` struct contains the data for what the graph will be called. If the filename is changed, then a new url will be outputted for the output of our data. Next, there is the ```payload``` struct, which sets up the data to be posted online. Afterwards in this struct, the heaaders, url, and body are declared.Finally, the ```httppostwrapper``` function is called, which will request the http website and actually post the information online for others to see.  
+
+Posting to 2 Separate Graphs:
+
+In order to post to 2 separate graphs, we wrote 2 different device.on functions, one for temperature reading and one for light readings. By changing the "filename" variable in these functions, we are able to post data to separate graphs. Each time the filename is changed by the user, a new url will be outputted on the terminal. If we do not change the filename, then the data will continuously be updated on the same graph on plotly. 
 
 #Errors and Issues
 
