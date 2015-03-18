@@ -41,7 +41,7 @@ Thermistor:
 Select 2 pins on the electric imp, we used pin7 and pin9 for our specific case. Connect a resistor of your choice, we used a 330 ohm resistor, and connect that to one of the pins. Then, connect one end of the thermistor to the resistor, while you connect the other end to the second pin you have selected. Connect the other end of the 330 ohm resistor to the power bus on your board. There is no need to ground the thermistor as mentioned above because you want to use one of the pins to control when to take input from the thermistor. Depending on the pins you have selected, you must write your code accordingly to these pins or the thermistor will not function correctly. 
 
 #Coding and Squirrel
-Electric Imp has its own online IDE that allows you to edit both the code for the agent and the device. This gives you complete control over how data is managed as its getting sent through the Electric Imp module. 
+Electric Imp has its own online IDE that allows you to edit code in order to control the behavior of hardware( referred to as the device code) and how it connects to the internet and sends/receives data(referred to as the agent code). This gives you complete control over how data is managed as it is sent through the Electric Imp module. 
 
 https://ide.electricimp.com/ide
 Squirrel is the language used to program the imp. Squirrel is very similar to
@@ -60,7 +60,7 @@ Once you use the mobile phone Electric Imp app to connect your module to the int
 
 
 #Interpreting our code
-In order to get the electric imp to function the way we want it to, the coding is divided into 2 separate sections. The device section, and the agent section. The device section is where we will write code to actually get analog input from the electric imp, and the agent section is where we write code to upload the input we have onto the internet. 
+In order to get the electric imp to function the way we want it to, the coding is divided into 2 separate sections. The device.nut, and the agent.nut. ".nut" is the file extension for the squirrel Language.  The device section is where we will write code to actually get analog input from the electric imp, and the agent section is where we write code to upload the input we have onto the internet. 
 
 Specifics to Device: 
 
