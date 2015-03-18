@@ -59,8 +59,6 @@ https://electricimp.com/docs/gettingstarted/helloworld/
 
 https://electricimp.com/docs/squirrel/squirrelcrib/
 
-![SquirrelCode](/images/SquirrelCode.png?raw=true "SquirrelCode.png")
-
 You will need to decide on a data service that will store this information for you. Sparkfun has their own data service which is pretty easy to setup and can even print out graphs for you without any extra configuration. We used plot.ly as our data service simply because we wanted to be able to do more with the data we collected, such as embedding it on our own website.
 
 https://data.sparkfun.com/ & http://imp.guru/
@@ -76,6 +74,9 @@ Once you use the mobile phone Electric Imp app to connect your module to the int
 
 
 #Interpreting our code
+
+![SquirrelCode](/images/SquirrelCode.png?raw=true "SquirrelCode.png")
+
 In order to get the electric imp to function the way we want it to, the coding is divided into 2 separate sections. The device.nut, and the agent.nut. ".nut" is the file extension for the squirrel Language.  The device section is where we will write code to actually get analog input from the electric imp, and the agent section is where we write code to upload the input we have onto the internet. 
 
 Specifics to Device: 
