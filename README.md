@@ -1,9 +1,34 @@
+You can probably come up with a better name than this.  A good choice would be to pick some greek myth related to plants that hasn't already been claimed.
 # SensorsToInternet
-A UCR Computer Science 100 project by Michael Uy, Leo Li, William Lee, Chuanping “Ping” Fan
 
-This hardware hack attempts to provide the user with a simple means of communicating data from an analog sensor to be sent, stored, and tracked on the internet. This opens up the opportunity to automate our world. For this proect specifically, we used an Electric Imp to get readings from a thermistor and a photosensor and upload that information to the internet. Our project goal is to present this data in an organized way so that future readers can recreate this project for themselves and explore the applications.
+No one cares that it's a class project, and if they want to know who contributed they have the git logs.
+
+You need one sentence per line in accordance with issue #1028 in the cs100 repo.
+
+>This hardware hack attempts to provide the user with a simple means of communicating data from an analog sensor to be sent, stored, and tracked on the internet. 
+1. Hardware on github?  That makes no sense.  Github is for code.  This needs rewording.
+2. Your project "attempts" to do something?  Then why should I care?  I only care about projects that actually do something.
+3. Never say "the user".  Talk to me directly.  Say "you".
+3. Better is:
+   
+
+This opens up the opportunity to automate our world. 
+> Don't be so high faluting.  Your project may be one step toward automating the world, but it's like 0.0000000000001% of the way there.  Someone like Elon Musk can make broad claims like this.  You can't.  You need to be specific.
+
+
+For this proect specifically, we used an Electric Imp to get readings from a thermistor and a photosensor and upload that information to the internet. Our project goal is to present this data in an organized way so that future readers can recreate this project for themselves and explore the applications.
+
+A better intro is:
+
+SensorNet is a simple platform for managing your [Electric Imp](link) sensors.
+It logs their output over time, lets you monitor these logs from anywhere on the internet, and lets you run predefined actions in response to certain conditions.
+We developed SensorNet for automating a small aquaponics farm.
+
+Then put pictures here.
+
 
 Welcome to the Inernet of Things!
+These words don't tell me anything.  They just distract from your message.
 
 
 #Components and where do we get them
@@ -31,6 +56,9 @@ Assembly:
 There are many different ways for users to assemble sensors in order to upload data onto the internet through using an electric imp. The electric imp consists of a micro-controller with pins as output and input, allowing the user to connect various sensors to it. In our specific case, we used a photoresistor as a sensor for light input, and a thermistor as a sensor for temperature input. 
 
 The photoresistor we used for light input is connected to pin8 of the electric imp. The photoresistor will take in light input, along with the voltage provided by the electric imp, and convert the analog input into a digital output. It is in turn displayed onto a graph. One side of the photoresistor is connected to pin8 along with a current limiting resistor, and the other side is connected to ground. The external resistor we attached allows us to calculate the current flowing through the resistors because we know the voltage coming out of the electric imp. Because we already know the current flowing through the photoresistor, and the provided voltage of 3.3V coming from the electric imp, we can calculate the resistance given by the photoresistor itself. It in turn gives us a digital output of an value based on the amount of light being shown on the photocell.  
+
+This is content seems unrelated to your project to me.
+It's probably useful somewhere else, but not in your README.
 
 The thermistor, on the other hand, is a little more complicated. A thermistor is a temperature dependent resistor. It has a specific resistance at room temperature. The resistance varies in proportion with temperature of the component. In our case, our thermistor is a negative temperature coefficient thermistor, meaning that the resistance will decrease as the temperature increases. By including another external resistor along with the thermistor, we created a resistive divider. The resistive divider allows us to calculate the amout of current that flows through both resistors in series. Given the voltage coming from the electric imp, the external 330k ohm resistor we added and the current that is flowing through both of them, we can now calculate the resistance of the thermistor. From the resistance of the thermistor, we can determine the temperature. The thermistor is connected to pins 7 and 9 of the electric imp. Pin 9 connected to the thermistor which is used as an analog to digital converter. It provides a voltage to the thermistor, thus allowing for it to intake analog input from the surrounding environment. Pin 7 is connected on the other side of the thermistor and acts as digital output. When pin7 is set on high, no current flows through the resistors and therefore there is no reading taken. When pin7 is set low, current flows through, thus allowing the thermistor to actually take a measurement. Through implementing pin7, we have control when to take a temperature input from the thermistor. 
 
@@ -72,6 +100,7 @@ https://plot.ly/workshop/
 Below is our graphs of light and temperature on plot.ly
 ![LightGraph](/images/LightGraph.png?raw=true "LightGraph.png") ![TempGraph](/images/TempGraph.png?raw=true "TempGraph.png")
 
+No one wants to see your whole desktop.  We just want to see the graphs!  Get rid of anything that doesn't directly support your cause.
 
 Once you use the mobile phone Electric Imp app to connect your module to the internet, you can then go onto the Electric Imp IDE 
 
