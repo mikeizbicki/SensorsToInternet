@@ -27,7 +27,6 @@ For some circuit enthusiasts, many of the materials may be lying around the hous
 #Procedure and Assembly
 
 Assembly: 
-
 ![device](/images/device.JPG?raw=true "device.JPG")
 
 There are many different ways for users to assemble sensors in order to upload data onto the internet through using an electric imp. The electric imp consists of a micro-controller with pins as output and input, allowing the user to connect various sensors to it. In our specific case, we used a photoresistor as a sensor for light input, and a thermistor as a sensor for temperature input. 
