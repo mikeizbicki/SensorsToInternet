@@ -5,6 +5,7 @@ This hardware hack attempts to provide the user with a simple means of communica
 
 Welcome to the Inernet of Things!
 
+![webpage](/images/webpage.png?raw=true "webpage.png")
 
 
 #Components and where do we get them
