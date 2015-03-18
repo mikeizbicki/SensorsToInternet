@@ -95,11 +95,11 @@ The ```device.on``` function is a function that passes in a string, and dependin
 
 Posting to 2 Separate Graphs:
 
-In order to post to 2 separate graphs, we wrote 2 different device.on functions, one for temperature reading and one for light readings. By changing the "filename" variable in these functions, we are able to post data to separate graphs. Each time the filename is changed by the user, a new url will be outputted on the terminal. If we do not change the filename, then the data will continuously be updated on the same graph on plotly. 
+In order to post two separate graphs, we wrote two different ```device.on``` functions: one for temperature reading and one for light readings. By changing the "filename" variable in these functions, we are able to post data to separate graphs. Each time the filename is changed by the user, a new url will be outputted on the terminal. If we do not change the filename, then the data will continuously be updated on the same graph on plot.ly. 
 
 #Errors and Issues
 
-The electric imp is going to take some time and patience to configure correctly to your phone. That is because the electric imp needs to read a light pattern emitted from your smart phone. If there are external light and/or other distractions in the room that might obstruct the reading pattern of the electric imp, the imp not configure. We have encountered this error many times in our numerous attempts to configure the imp. The best solution for this issue is to configure your imp in a dark area where no other light except the light on you smart phone can be seen by your electric imp. 
+The electric imp is going to take some time and patience to configure correctly to your phone. That is because the electric imp needs to read a light pattern emitted from your smart phone. If there are external light and/or other distractions in the room that might obstruct the reading pattern of the electric imp, and the imp not configure. We have encountered this error many times in our numerous attempts to configure the imp. The best solution for this issue is to configure your imp in a dark area where no other light except the light on your smart phone can be seen by your electric imp. 
 
 #Applications and Extensions 
 - Track when your dog uses the doggy door/ are they inside or outside
