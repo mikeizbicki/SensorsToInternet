@@ -54,9 +54,10 @@ Squirrel is the language used to program the imp. Squirrel is very similar to
  C and C++. The official Electric Imp website has a few resources you can use to get yourself started, or you can just look at provided code. 
 
 https://electricimp.com/docs/gettingstarted/helloworld/
+
 https://electricimp.com/docs/squirrel/squirrelcrib/
 
-![SquirrelCode](/images/webpage.png?raw=true "SquirrelCode.png")
+![SquirrelCode](/images/SquirrelCode.png?raw=true "SquirrelCode.png")
 
 You will need to decide on a data service that will store this information for you. Sparkfun has their own data service which is pretty easy to setup and can even print out graphs for you without any extra configuration. We used plot.ly as our data service simply because we wanted to be able to do more with the data we collected, such as embedding it on our own website.
 
