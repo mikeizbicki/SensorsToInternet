@@ -29,6 +29,7 @@ For some circuit enthusiasts, many of the materials may be lying around the hous
 Assembly: 
 
 ![device](/images/device.JPG?raw=true "device.JPG")
+
 There are many different ways for users to assemble sensors in order to upload data onto the internet through using an electric imp. The electric imp consists of a micro-controller with pins as output and input, allowing the user to connect various sensors to it. In our specific case, we used a photoresistor as a sensor for light input, and a thermistor as a sensor for temperature input. 
 
 The photoresistor we used for light input is connected to pin8 of the electric imp. The photoresistor will take in light input, and along with the voltage provided by the electric imp, and convert the analog input into a digital output, which is in turn displayed onto a graph. One side of the photoresistor is connected to pin8 along with a current limiting resistor, and the other side is connected to ground. The external resistor we attached allows us to calculate the current flowing through the resistors because we know the voltage coming out of the electric imp. Because we already know the current flowing through the photoresistor and the provided voltage of 3.3V coming from the electric imp, we can calculate the resistance given by the photoresistor itself, which in turn give us a digital output of an value based on the amount of light being shown on the photocell.  
