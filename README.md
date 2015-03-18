@@ -81,13 +81,13 @@ In order to get the electric imp to function the way we want it to, the coding i
 
 Specifics to Device: 
 
-The ```getsensor()``` function takes in analog light and converts the light into a digital output using a specific formula given to us. 
+The ```getsensor()``` function takes in analog light and converts the light into a digital output using a specific formula given to us. We then send that data up to the internet to be graphed.
 
 The ```getsensortemp()``` function takes in analog temperature input as Kelvins and converts it to Fahrenheit, which we send to a data stream on the internet to be graphed. To increase the accuracy of our readings, we take the average of ten readings .001 seconds apart to allow enough time for the thermistor pin to recharge. For varying thermistors, diffrent constants may need to be used and could be found on the data sheet of your device.
 
-The ```gettime()``` function gets the current month, date, and time of when the actual analog input is received fromt the sensor connected to the electric imp. 
+The ```gettime()``` function gets the current month, date, and time of when the actual analog input is received fromt the sensor connected to the electric imp. You need to +/- 3600*(hours ahead or behind GMT) from the time the electric imp receives in order to get the time zone you need. eg: For +5 GMT ```local date = date(time()+18000, "u");```
 
-The ```sendDataToAgent()``` function sends the data we have received from the sensors on our electric imp to the agent section of the IDE, where then the agent will continue on to upload all the data we have received. In our code, wee assigned pin9 as ANALOG_IN to read the temp, but we also set pin7 as DIGITAL_OUT. By setting pin7 to high, we are able to deactivate the thermistor and save electricity. In order for us to take readings, we simply write pin7 to 0  and call our read function, writing 1 to pin7 afterwards.
+The ```sendDataToAgent()``` function sends the data we have received from the sensors on our electric imp to the agent section of the IDE, where the agent will then continue on to upload all the data we have received. In our code, we assigned pin9 as ANALOG_IN to read the temp and pin7 as DIGITAL_OUT. By setting pin7 to high, we are able to deactivate the thermistor and save electricity. In order for us to take readings, we simply write pin7 to 0  and call our read function, writing 1 to pin7 afterwards.
 
 Specifics to Agent:
 
